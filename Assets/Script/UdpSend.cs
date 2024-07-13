@@ -45,9 +45,9 @@ public class UdpSend : MonoBehaviour
 
     public void SetText()
     {
-        IPNumber.text = IP_InputField.text;
         host = IP_InputField.text;
-        PortNumber.text = Port_InputField.text;
+        IPNumber.text = host;
         port = int.Parse(Port_InputField.text);
+        PortNumber.text = port.ToString();
     }
 }
