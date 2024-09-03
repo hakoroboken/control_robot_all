@@ -46,27 +46,81 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Mechanism"",
+                    ""name"": ""Mec1_plus"",
                     ""type"": ""Button"",
                     ""id"": ""749e1913-aed8-4033-946e-b5cda6ebd6b4"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Reset"",
-                    ""type"": ""Button"",
-                    ""id"": ""09473271-c642-48aa-878a-866a3b8230d5"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Space"",
+                    ""name"": ""Mec1_minus"",
                     ""type"": ""Button"",
-                    ""id"": ""e49dff59-7e19-4e42-b1e8-87a22fb19918"",
+                    ""id"": ""31e1e1b0-304e-4ca4-a96d-3ffac4cf1ea3"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Mec2_plus"",
+                    ""type"": ""Button"",
+                    ""id"": ""f463009b-8c15-4416-ae72-757fbbabf667"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Mec2_minus"",
+                    ""type"": ""Button"",
+                    ""id"": ""da21f069-4350-4518-aba9-e1628bbf23d1"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Mec3_plus"",
+                    ""type"": ""Button"",
+                    ""id"": ""481007b2-7c8c-42d1-b9dd-a76f752739c0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Mec3_minus"",
+                    ""type"": ""Button"",
+                    ""id"": ""5a8ae614-486b-440f-8a40-87d06dbe9e73"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Mec2_double"",
+                    ""type"": ""Button"",
+                    ""id"": ""4fd92aac-f478-4de0-813f-0877d5cf1e8a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Mec3_double"",
+                    ""type"": ""Button"",
+                    ""id"": ""35b15a9f-15ad-4a41-9808-1a507ba1c569"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Mec1_double"",
+                    ""type"": ""Button"",
+                    ""id"": ""563ff6a0-b0a0-4d96-8381-024a2a4b32ef"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -93,50 +147,6 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
                     ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""8a788ae8-8ac3-4d2e-a8f1-46860fd522a1"",
-                    ""path"": ""<Gamepad>/rightTrigger"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Gamepad"",
-                    ""action"": ""Mechanism"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""e8aa6249-986c-43eb-971f-19f5dd3cba11"",
-                    ""path"": ""<Mouse>/rightButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Mechanism"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""201b2e71-00de-4990-9498-10765ae349b9"",
-                    ""path"": ""<Gamepad>/buttonWest"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Gamepad"",
-                    ""action"": ""Reset"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""0f85f9cc-77bf-471b-a4aa-0fa40101f2af"",
-                    ""path"": ""<Keyboard>/r"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Reset"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -262,26 +272,664 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""7fd7e1c3-a80b-4ad3-aec4-1eb46d8c529a"",
-                    ""path"": ""<Pointer>/delta"",
+                    ""name"": ""One Modifier"",
+                    ""id"": ""b44c12d6-eb2d-49d5-a335-1f9e66bef8c7"",
+                    ""path"": ""OneModifier"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse;Touch"",
-                    ""action"": ""Space"",
-                    ""isComposite"": false,
+                    ""groups"": """",
+                    ""action"": ""Mec2_minus"",
+                    ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""b9cf024c-2689-4604-9ea4-7fad038536fe"",
-                    ""path"": ""<Joystick>/{Hatswitch}"",
+                    ""name"": ""modifier"",
+                    ""id"": ""40784534-088a-4bac-a571-315e4b826282"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Joystick"",
-                    ""action"": ""Space"",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec2_minus"",
                     ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""97bf2de6-81e6-44af-9ec6-f2c49939d850"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec2_minus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""One Modifier"",
+                    ""id"": ""7e20fcd8-755f-4979-93b7-7e9601eebc7d"",
+                    ""path"": ""OneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mec2_minus"",
+                    ""isComposite"": true,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier"",
+                    ""id"": ""21ee8240-565a-4e0c-8aba-2227e24f9750"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Mec2_minus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""913a8912-110a-41b0-9396-7bc24ac0b87c"",
+                    ""path"": ""<Keyboard>/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Mec2_minus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""One Modifier"",
+                    ""id"": ""65e2c3e2-79b4-4879-9c7f-84d448a9df76"",
+                    ""path"": ""OneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mec3_minus"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier"",
+                    ""id"": ""da48607e-8251-40f4-b277-18a8c92fc97c"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec3_minus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""6170fcf0-845f-4ffc-93db-f904258722be"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec3_minus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""One Modifier"",
+                    ""id"": ""68eab1a0-32f5-4f8a-816a-68b6a527a3a6"",
+                    ""path"": ""OneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mec3_minus"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier"",
+                    ""id"": ""881dba91-3fd8-4372-a55f-32b9cf21dc38"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Mec3_minus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""6b88eec1-5198-487b-90eb-6be94fd88af1"",
+                    ""path"": ""<Keyboard>/c"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Mec3_minus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""One Modifier"",
+                    ""id"": ""c9a3d203-3e37-4afb-8b3c-c03aa527591e"",
+                    ""path"": ""OneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mec1_minus"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier"",
+                    ""id"": ""3e71712b-cff5-4bb2-b4b9-7d704d884fbe"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec1_minus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""820fcd63-7e48-46e0-9337-b490027493b7"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec1_minus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""One Modifier"",
+                    ""id"": ""3b7e32fe-c923-4780-91e4-f6928dd73daa"",
+                    ""path"": ""OneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mec1_minus"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier"",
+                    ""id"": ""d2a06172-ed7e-4250-a327-7ff51c4a030b"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Mec1_minus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""b995eddb-7209-40ad-a89d-33b573c10af5"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Mec1_minus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""One Modifier"",
+                    ""id"": ""d8743e58-5d40-43fa-89b0-9680998ab959"",
+                    ""path"": ""OneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mec1_plus"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier"",
+                    ""id"": ""06c80971-a1fc-4e72-8b38-cd55da9d751e"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec1_plus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""ea96cba3-ebe0-43e8-b57f-f4ba44201189"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec1_plus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""One Modifier"",
+                    ""id"": ""3ce67de3-ad57-44d6-99c7-3c9455e31908"",
+                    ""path"": ""OneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mec1_plus"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier"",
+                    ""id"": ""97a328c4-9691-4a9a-861e-a42ca884e682"",
+                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Mec1_plus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""b732ea4f-74d9-4025-bda9-815136d25d0c"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Mec1_plus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""One Modifier"",
+                    ""id"": ""e5490a31-9973-424f-b883-8cbd75f5a969"",
+                    ""path"": ""OneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mec2_plus"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier"",
+                    ""id"": ""db2d3ba3-5797-405a-9fcc-0ec50f2be929"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec2_plus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""5fce3353-c3a9-4e24-aa36-e1472bf10b10"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec2_plus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""One Modifier"",
+                    ""id"": ""a32f8f95-ae69-41f3-9e39-b254324e2b22"",
+                    ""path"": ""OneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mec2_plus"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier"",
+                    ""id"": ""7c781c54-8d77-4a74-a059-18968c53ccc0"",
+                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Mec2_plus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""cff42a7a-9cb8-4752-8021-28ba4f8516a5"",
+                    ""path"": ""<Keyboard>/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Mec2_plus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""One Modifier"",
+                    ""id"": ""d43997f5-a33f-42d3-b111-09f9dfc9177f"",
+                    ""path"": ""OneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mec3_plus"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier"",
+                    ""id"": ""a6b331bf-55ba-4213-a734-da9d456aad86"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec3_plus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""c8398b5b-8545-401f-bf14-ec319c3c36d1"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec3_plus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""One Modifier"",
+                    ""id"": ""22cbea50-03a8-4d3f-adfd-083ea0338ecd"",
+                    ""path"": ""OneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mec3_plus"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier"",
+                    ""id"": ""e7f1115b-925c-4165-82ab-eda999cc1cd5"",
+                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad;Keyboard&Mouse"",
+                    ""action"": ""Mec3_plus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""0a4c27ab-559e-44f5-ab63-3d3e1eaf3959"",
+                    ""path"": ""<Keyboard>/c"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Mec3_plus"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Two Modifiers"",
+                    ""id"": ""b33a0b36-6b16-4312-87f7-56334784e376"",
+                    ""path"": ""TwoModifiers"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mec2_double"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier1"",
+                    ""id"": ""2365f76f-5673-4b1f-879d-3507089b3ecb"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec2_double"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""modifier2"",
+                    ""id"": ""86baf5f2-c23b-4f8a-86d2-8c5db5146b72"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec2_double"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""2e1ec712-7c3b-4dab-a343-b6cdf059d041"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec2_double"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Two Modifiers"",
+                    ""id"": ""e86413c1-4a59-4c3d-9c84-1cc04c562928"",
+                    ""path"": ""TwoModifiers"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mec2_double"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier1"",
+                    ""id"": ""34495be0-6d84-4716-9046-683f36d0ecc2"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Mec2_double"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""modifier2"",
+                    ""id"": ""28e5424d-73ca-40e9-b42b-de27c0642a1b"",
+                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Mec2_double"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""21945f69-45bc-4962-b5c7-2f2d249d824f"",
+                    ""path"": ""<Keyboard>/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mec2_double"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Two Modifiers"",
+                    ""id"": ""ad08f2b1-7303-436b-9b0f-5dbd6abab5e8"",
+                    ""path"": ""TwoModifiers"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mec3_double"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier1"",
+                    ""id"": ""01a9950e-e1d9-42b1-9dfa-8d323cb851da"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec3_double"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""modifier2"",
+                    ""id"": ""3e9f1bc3-bb78-4228-bb19-e630b2325ab9"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec3_double"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""8b80f1c7-06ce-4826-9d14-17fac1c90978"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec3_double"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Two Modifiers"",
+                    ""id"": ""74857544-91f2-4cbd-a12c-1ed0901a7ab4"",
+                    ""path"": ""TwoModifiers"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mec3_double"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier1"",
+                    ""id"": ""84df7b7f-4daa-42f8-a194-658960d5a439"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Mec3_double"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""modifier2"",
+                    ""id"": ""11cd2a39-1ab3-42b9-90f3-978756dc8b59"",
+                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Mec3_double"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""0dff2a6f-2930-4fda-b0dc-f28d768e9646"",
+                    ""path"": ""<Keyboard>/c"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Mec3_double"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Two Modifiers"",
+                    ""id"": ""a7de58c0-241e-46ec-9ed2-16c8b5670581"",
+                    ""path"": ""TwoModifiers"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mec1_double"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier1"",
+                    ""id"": ""c4d4021d-e408-484c-bae1-d9ad7818ccfa"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec1_double"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""modifier2"",
+                    ""id"": ""8f0ff2e8-c087-46bf-8d70-378b572d8419"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec1_double"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""84563c3d-3be4-452d-b7cc-bc929513d7c7"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Mec1_double"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Two Modifiers"",
+                    ""id"": ""2915ccde-bc6c-413b-b73c-f8aff6eb77f5"",
+                    ""path"": ""TwoModifiers"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mec1_double"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier1"",
+                    ""id"": ""eb037c98-b456-46bd-baf4-1be609b46d9c"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Mec1_double"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""modifier2"",
+                    ""id"": ""99855a56-ab6a-48bc-afcb-060ef6e37336"",
+                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Mec1_double"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""673d3e95-4487-4520-a0b7-b2868da32221"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Mec1_double"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         },
@@ -800,6 +1448,374 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""ButtonTest"",
+            ""id"": ""955389aa-6108-4f2b-995b-3a751eedefaa"",
+            ""actions"": [
+                {
+                    ""name"": ""Circle"",
+                    ""type"": ""Button"",
+                    ""id"": ""75e02a65-6583-4c5e-b59a-12f27a335392"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Cross"",
+                    ""type"": ""Button"",
+                    ""id"": ""c1a4f043-4379-4a1b-ba74-652ba5f9503a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Square"",
+                    ""type"": ""Button"",
+                    ""id"": ""c34257b5-1c2d-49e2-9a15-6b2d0c59b7d9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Triangle"",
+                    ""type"": ""Button"",
+                    ""id"": ""217040d2-8f24-4761-b225-e8e6133fdf9e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Up"",
+                    ""type"": ""Button"",
+                    ""id"": ""1fb3491a-d587-47ea-bbed-08c41d3ea064"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Down"",
+                    ""type"": ""Button"",
+                    ""id"": ""80f80f94-6a1b-4110-9a87-7b076d1afea5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Right"",
+                    ""type"": ""Button"",
+                    ""id"": ""f341d6b2-9d23-48d0-9047-7537a954efff"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Left"",
+                    ""type"": ""Button"",
+                    ""id"": ""203066fc-ab0a-4abb-856f-ee5fa7f03db5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""R1"",
+                    ""type"": ""Button"",
+                    ""id"": ""8c21829d-a17a-4852-9c72-ef3b859008e1"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""R2"",
+                    ""type"": ""Button"",
+                    ""id"": ""6efbb6a5-9ffc-47ac-b8fa-481753f96bac"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""R3"",
+                    ""type"": ""Button"",
+                    ""id"": ""ca2074e3-1807-4cf3-8e24-fcff03f20521"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""L1"",
+                    ""type"": ""Button"",
+                    ""id"": ""d7854d85-3f29-4a01-8d8f-b2d0047a6baf"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""L2"",
+                    ""type"": ""Button"",
+                    ""id"": ""2ba26dcf-d8a6-4746-8dd8-52f3b3c00a8c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""L3"",
+                    ""type"": ""Button"",
+                    ""id"": ""0b303970-fb9f-444f-8413-3afb04117682"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Options"",
+                    ""type"": ""Button"",
+                    ""id"": ""127b4da9-167e-492e-9f15-9c8d4c248b3f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Share"",
+                    ""type"": ""Button"",
+                    ""id"": ""ef4b41ec-577a-40b1-a50b-4b26ce82bf34"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RightStick"",
+                    ""type"": ""Value"",
+                    ""id"": ""47839747-0f65-442a-a660-1923b0aa75c5"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""LeftStick"",
+                    ""type"": ""Value"",
+                    ""id"": ""b3b74d1c-494f-4f2b-b853-abd806e716d8"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""e6c17449-ce25-45a7-8c07-2ad5740f38c8"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Circle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""57e5ffe5-85da-4fed-a050-6e513ccded93"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Cross"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""05b16783-5158-43e0-9b18-06b09d7de54c"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Square"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""eb17e2b9-c736-4023-9ea8-adac30aefa13"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Triangle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9363cc4f-99c6-4cb9-b782-ae7c22642c47"",
+                    ""path"": ""<Gamepad>/dpad/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Up"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dda2d794-355e-4489-a6be-0e390d6fde33"",
+                    ""path"": ""<Gamepad>/dpad/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Down"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""539bd4a1-de7e-46bc-adbf-7d265e4a41eb"",
+                    ""path"": ""<Gamepad>/dpad/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Right"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""757a043b-3093-468f-bf00-17eb5c848f18"",
+                    ""path"": ""<Gamepad>/dpad/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Left"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9b3e6a52-d5b5-4f3b-baa2-c64e7ec642c7"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""R1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""87e26bcf-a813-4baf-9aab-cfb27eba9cdc"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""R2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b94159e1-f210-48a4-bc03-64cc26b8ec40"",
+                    ""path"": ""<Gamepad>/rightStickPress"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""R3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a07e50bf-e1ac-4f26-8f60-16707f9bf7b6"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""L1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c986fd84-970f-4e7f-9579-c21496888a86"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""L2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c49a686f-4223-4bee-aa08-d3b03cb5b615"",
+                    ""path"": ""<Gamepad>/leftStickPress"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""L3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""12603f12-5bbe-405c-b16d-c599c1de83f4"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Options"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fa25a8ba-af97-4ce5-8e4d-b2c5fda2197b"",
+                    ""path"": ""<Gamepad>/select"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Share"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5e4cb7e1-0eca-43b5-ba57-7987ebb9aeb4"",
+                    ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""RightStick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6983d8a6-eab2-44fa-b9c8-95a0c1da7b7e"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""LeftStick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -869,9 +1885,15 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
-        m_Player_Mechanism = m_Player.FindAction("Mechanism", throwIfNotFound: true);
-        m_Player_Reset = m_Player.FindAction("Reset", throwIfNotFound: true);
-        m_Player_Space = m_Player.FindAction("Space", throwIfNotFound: true);
+        m_Player_Mec1_plus = m_Player.FindAction("Mec1_plus", throwIfNotFound: true);
+        m_Player_Mec1_minus = m_Player.FindAction("Mec1_minus", throwIfNotFound: true);
+        m_Player_Mec2_plus = m_Player.FindAction("Mec2_plus", throwIfNotFound: true);
+        m_Player_Mec2_minus = m_Player.FindAction("Mec2_minus", throwIfNotFound: true);
+        m_Player_Mec3_plus = m_Player.FindAction("Mec3_plus", throwIfNotFound: true);
+        m_Player_Mec3_minus = m_Player.FindAction("Mec3_minus", throwIfNotFound: true);
+        m_Player_Mec2_double = m_Player.FindAction("Mec2_double", throwIfNotFound: true);
+        m_Player_Mec3_double = m_Player.FindAction("Mec3_double", throwIfNotFound: true);
+        m_Player_Mec1_double = m_Player.FindAction("Mec1_double", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -884,6 +1906,26 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
         m_UI_RightClick = m_UI.FindAction("RightClick", throwIfNotFound: true);
         m_UI_TrackedDevicePosition = m_UI.FindAction("TrackedDevicePosition", throwIfNotFound: true);
         m_UI_TrackedDeviceOrientation = m_UI.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
+        // ButtonTest
+        m_ButtonTest = asset.FindActionMap("ButtonTest", throwIfNotFound: true);
+        m_ButtonTest_Circle = m_ButtonTest.FindAction("Circle", throwIfNotFound: true);
+        m_ButtonTest_Cross = m_ButtonTest.FindAction("Cross", throwIfNotFound: true);
+        m_ButtonTest_Square = m_ButtonTest.FindAction("Square", throwIfNotFound: true);
+        m_ButtonTest_Triangle = m_ButtonTest.FindAction("Triangle", throwIfNotFound: true);
+        m_ButtonTest_Up = m_ButtonTest.FindAction("Up", throwIfNotFound: true);
+        m_ButtonTest_Down = m_ButtonTest.FindAction("Down", throwIfNotFound: true);
+        m_ButtonTest_Right = m_ButtonTest.FindAction("Right", throwIfNotFound: true);
+        m_ButtonTest_Left = m_ButtonTest.FindAction("Left", throwIfNotFound: true);
+        m_ButtonTest_R1 = m_ButtonTest.FindAction("R1", throwIfNotFound: true);
+        m_ButtonTest_R2 = m_ButtonTest.FindAction("R2", throwIfNotFound: true);
+        m_ButtonTest_R3 = m_ButtonTest.FindAction("R3", throwIfNotFound: true);
+        m_ButtonTest_L1 = m_ButtonTest.FindAction("L1", throwIfNotFound: true);
+        m_ButtonTest_L2 = m_ButtonTest.FindAction("L2", throwIfNotFound: true);
+        m_ButtonTest_L3 = m_ButtonTest.FindAction("L3", throwIfNotFound: true);
+        m_ButtonTest_Options = m_ButtonTest.FindAction("Options", throwIfNotFound: true);
+        m_ButtonTest_Share = m_ButtonTest.FindAction("Share", throwIfNotFound: true);
+        m_ButtonTest_RightStick = m_ButtonTest.FindAction("RightStick", throwIfNotFound: true);
+        m_ButtonTest_LeftStick = m_ButtonTest.FindAction("LeftStick", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -947,18 +1989,30 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Look;
-    private readonly InputAction m_Player_Mechanism;
-    private readonly InputAction m_Player_Reset;
-    private readonly InputAction m_Player_Space;
+    private readonly InputAction m_Player_Mec1_plus;
+    private readonly InputAction m_Player_Mec1_minus;
+    private readonly InputAction m_Player_Mec2_plus;
+    private readonly InputAction m_Player_Mec2_minus;
+    private readonly InputAction m_Player_Mec3_plus;
+    private readonly InputAction m_Player_Mec3_minus;
+    private readonly InputAction m_Player_Mec2_double;
+    private readonly InputAction m_Player_Mec3_double;
+    private readonly InputAction m_Player_Mec1_double;
     public struct PlayerActions
     {
         private @GameInputs m_Wrapper;
         public PlayerActions(@GameInputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Look => m_Wrapper.m_Player_Look;
-        public InputAction @Mechanism => m_Wrapper.m_Player_Mechanism;
-        public InputAction @Reset => m_Wrapper.m_Player_Reset;
-        public InputAction @Space => m_Wrapper.m_Player_Space;
+        public InputAction @Mec1_plus => m_Wrapper.m_Player_Mec1_plus;
+        public InputAction @Mec1_minus => m_Wrapper.m_Player_Mec1_minus;
+        public InputAction @Mec2_plus => m_Wrapper.m_Player_Mec2_plus;
+        public InputAction @Mec2_minus => m_Wrapper.m_Player_Mec2_minus;
+        public InputAction @Mec3_plus => m_Wrapper.m_Player_Mec3_plus;
+        public InputAction @Mec3_minus => m_Wrapper.m_Player_Mec3_minus;
+        public InputAction @Mec2_double => m_Wrapper.m_Player_Mec2_double;
+        public InputAction @Mec3_double => m_Wrapper.m_Player_Mec3_double;
+        public InputAction @Mec1_double => m_Wrapper.m_Player_Mec1_double;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -974,15 +2028,33 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
             @Look.started += instance.OnLook;
             @Look.performed += instance.OnLook;
             @Look.canceled += instance.OnLook;
-            @Mechanism.started += instance.OnMechanism;
-            @Mechanism.performed += instance.OnMechanism;
-            @Mechanism.canceled += instance.OnMechanism;
-            @Reset.started += instance.OnReset;
-            @Reset.performed += instance.OnReset;
-            @Reset.canceled += instance.OnReset;
-            @Space.started += instance.OnSpace;
-            @Space.performed += instance.OnSpace;
-            @Space.canceled += instance.OnSpace;
+            @Mec1_plus.started += instance.OnMec1_plus;
+            @Mec1_plus.performed += instance.OnMec1_plus;
+            @Mec1_plus.canceled += instance.OnMec1_plus;
+            @Mec1_minus.started += instance.OnMec1_minus;
+            @Mec1_minus.performed += instance.OnMec1_minus;
+            @Mec1_minus.canceled += instance.OnMec1_minus;
+            @Mec2_plus.started += instance.OnMec2_plus;
+            @Mec2_plus.performed += instance.OnMec2_plus;
+            @Mec2_plus.canceled += instance.OnMec2_plus;
+            @Mec2_minus.started += instance.OnMec2_minus;
+            @Mec2_minus.performed += instance.OnMec2_minus;
+            @Mec2_minus.canceled += instance.OnMec2_minus;
+            @Mec3_plus.started += instance.OnMec3_plus;
+            @Mec3_plus.performed += instance.OnMec3_plus;
+            @Mec3_plus.canceled += instance.OnMec3_plus;
+            @Mec3_minus.started += instance.OnMec3_minus;
+            @Mec3_minus.performed += instance.OnMec3_minus;
+            @Mec3_minus.canceled += instance.OnMec3_minus;
+            @Mec2_double.started += instance.OnMec2_double;
+            @Mec2_double.performed += instance.OnMec2_double;
+            @Mec2_double.canceled += instance.OnMec2_double;
+            @Mec3_double.started += instance.OnMec3_double;
+            @Mec3_double.performed += instance.OnMec3_double;
+            @Mec3_double.canceled += instance.OnMec3_double;
+            @Mec1_double.started += instance.OnMec1_double;
+            @Mec1_double.performed += instance.OnMec1_double;
+            @Mec1_double.canceled += instance.OnMec1_double;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -993,15 +2065,33 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
             @Look.started -= instance.OnLook;
             @Look.performed -= instance.OnLook;
             @Look.canceled -= instance.OnLook;
-            @Mechanism.started -= instance.OnMechanism;
-            @Mechanism.performed -= instance.OnMechanism;
-            @Mechanism.canceled -= instance.OnMechanism;
-            @Reset.started -= instance.OnReset;
-            @Reset.performed -= instance.OnReset;
-            @Reset.canceled -= instance.OnReset;
-            @Space.started -= instance.OnSpace;
-            @Space.performed -= instance.OnSpace;
-            @Space.canceled -= instance.OnSpace;
+            @Mec1_plus.started -= instance.OnMec1_plus;
+            @Mec1_plus.performed -= instance.OnMec1_plus;
+            @Mec1_plus.canceled -= instance.OnMec1_plus;
+            @Mec1_minus.started -= instance.OnMec1_minus;
+            @Mec1_minus.performed -= instance.OnMec1_minus;
+            @Mec1_minus.canceled -= instance.OnMec1_minus;
+            @Mec2_plus.started -= instance.OnMec2_plus;
+            @Mec2_plus.performed -= instance.OnMec2_plus;
+            @Mec2_plus.canceled -= instance.OnMec2_plus;
+            @Mec2_minus.started -= instance.OnMec2_minus;
+            @Mec2_minus.performed -= instance.OnMec2_minus;
+            @Mec2_minus.canceled -= instance.OnMec2_minus;
+            @Mec3_plus.started -= instance.OnMec3_plus;
+            @Mec3_plus.performed -= instance.OnMec3_plus;
+            @Mec3_plus.canceled -= instance.OnMec3_plus;
+            @Mec3_minus.started -= instance.OnMec3_minus;
+            @Mec3_minus.performed -= instance.OnMec3_minus;
+            @Mec3_minus.canceled -= instance.OnMec3_minus;
+            @Mec2_double.started -= instance.OnMec2_double;
+            @Mec2_double.performed -= instance.OnMec2_double;
+            @Mec2_double.canceled -= instance.OnMec2_double;
+            @Mec3_double.started -= instance.OnMec3_double;
+            @Mec3_double.performed -= instance.OnMec3_double;
+            @Mec3_double.canceled -= instance.OnMec3_double;
+            @Mec1_double.started -= instance.OnMec1_double;
+            @Mec1_double.performed -= instance.OnMec1_double;
+            @Mec1_double.canceled -= instance.OnMec1_double;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -1137,6 +2227,188 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
         }
     }
     public UIActions @UI => new UIActions(this);
+
+    // ButtonTest
+    private readonly InputActionMap m_ButtonTest;
+    private List<IButtonTestActions> m_ButtonTestActionsCallbackInterfaces = new List<IButtonTestActions>();
+    private readonly InputAction m_ButtonTest_Circle;
+    private readonly InputAction m_ButtonTest_Cross;
+    private readonly InputAction m_ButtonTest_Square;
+    private readonly InputAction m_ButtonTest_Triangle;
+    private readonly InputAction m_ButtonTest_Up;
+    private readonly InputAction m_ButtonTest_Down;
+    private readonly InputAction m_ButtonTest_Right;
+    private readonly InputAction m_ButtonTest_Left;
+    private readonly InputAction m_ButtonTest_R1;
+    private readonly InputAction m_ButtonTest_R2;
+    private readonly InputAction m_ButtonTest_R3;
+    private readonly InputAction m_ButtonTest_L1;
+    private readonly InputAction m_ButtonTest_L2;
+    private readonly InputAction m_ButtonTest_L3;
+    private readonly InputAction m_ButtonTest_Options;
+    private readonly InputAction m_ButtonTest_Share;
+    private readonly InputAction m_ButtonTest_RightStick;
+    private readonly InputAction m_ButtonTest_LeftStick;
+    public struct ButtonTestActions
+    {
+        private @GameInputs m_Wrapper;
+        public ButtonTestActions(@GameInputs wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Circle => m_Wrapper.m_ButtonTest_Circle;
+        public InputAction @Cross => m_Wrapper.m_ButtonTest_Cross;
+        public InputAction @Square => m_Wrapper.m_ButtonTest_Square;
+        public InputAction @Triangle => m_Wrapper.m_ButtonTest_Triangle;
+        public InputAction @Up => m_Wrapper.m_ButtonTest_Up;
+        public InputAction @Down => m_Wrapper.m_ButtonTest_Down;
+        public InputAction @Right => m_Wrapper.m_ButtonTest_Right;
+        public InputAction @Left => m_Wrapper.m_ButtonTest_Left;
+        public InputAction @R1 => m_Wrapper.m_ButtonTest_R1;
+        public InputAction @R2 => m_Wrapper.m_ButtonTest_R2;
+        public InputAction @R3 => m_Wrapper.m_ButtonTest_R3;
+        public InputAction @L1 => m_Wrapper.m_ButtonTest_L1;
+        public InputAction @L2 => m_Wrapper.m_ButtonTest_L2;
+        public InputAction @L3 => m_Wrapper.m_ButtonTest_L3;
+        public InputAction @Options => m_Wrapper.m_ButtonTest_Options;
+        public InputAction @Share => m_Wrapper.m_ButtonTest_Share;
+        public InputAction @RightStick => m_Wrapper.m_ButtonTest_RightStick;
+        public InputAction @LeftStick => m_Wrapper.m_ButtonTest_LeftStick;
+        public InputActionMap Get() { return m_Wrapper.m_ButtonTest; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(ButtonTestActions set) { return set.Get(); }
+        public void AddCallbacks(IButtonTestActions instance)
+        {
+            if (instance == null || m_Wrapper.m_ButtonTestActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_ButtonTestActionsCallbackInterfaces.Add(instance);
+            @Circle.started += instance.OnCircle;
+            @Circle.performed += instance.OnCircle;
+            @Circle.canceled += instance.OnCircle;
+            @Cross.started += instance.OnCross;
+            @Cross.performed += instance.OnCross;
+            @Cross.canceled += instance.OnCross;
+            @Square.started += instance.OnSquare;
+            @Square.performed += instance.OnSquare;
+            @Square.canceled += instance.OnSquare;
+            @Triangle.started += instance.OnTriangle;
+            @Triangle.performed += instance.OnTriangle;
+            @Triangle.canceled += instance.OnTriangle;
+            @Up.started += instance.OnUp;
+            @Up.performed += instance.OnUp;
+            @Up.canceled += instance.OnUp;
+            @Down.started += instance.OnDown;
+            @Down.performed += instance.OnDown;
+            @Down.canceled += instance.OnDown;
+            @Right.started += instance.OnRight;
+            @Right.performed += instance.OnRight;
+            @Right.canceled += instance.OnRight;
+            @Left.started += instance.OnLeft;
+            @Left.performed += instance.OnLeft;
+            @Left.canceled += instance.OnLeft;
+            @R1.started += instance.OnR1;
+            @R1.performed += instance.OnR1;
+            @R1.canceled += instance.OnR1;
+            @R2.started += instance.OnR2;
+            @R2.performed += instance.OnR2;
+            @R2.canceled += instance.OnR2;
+            @R3.started += instance.OnR3;
+            @R3.performed += instance.OnR3;
+            @R3.canceled += instance.OnR3;
+            @L1.started += instance.OnL1;
+            @L1.performed += instance.OnL1;
+            @L1.canceled += instance.OnL1;
+            @L2.started += instance.OnL2;
+            @L2.performed += instance.OnL2;
+            @L2.canceled += instance.OnL2;
+            @L3.started += instance.OnL3;
+            @L3.performed += instance.OnL3;
+            @L3.canceled += instance.OnL3;
+            @Options.started += instance.OnOptions;
+            @Options.performed += instance.OnOptions;
+            @Options.canceled += instance.OnOptions;
+            @Share.started += instance.OnShare;
+            @Share.performed += instance.OnShare;
+            @Share.canceled += instance.OnShare;
+            @RightStick.started += instance.OnRightStick;
+            @RightStick.performed += instance.OnRightStick;
+            @RightStick.canceled += instance.OnRightStick;
+            @LeftStick.started += instance.OnLeftStick;
+            @LeftStick.performed += instance.OnLeftStick;
+            @LeftStick.canceled += instance.OnLeftStick;
+        }
+
+        private void UnregisterCallbacks(IButtonTestActions instance)
+        {
+            @Circle.started -= instance.OnCircle;
+            @Circle.performed -= instance.OnCircle;
+            @Circle.canceled -= instance.OnCircle;
+            @Cross.started -= instance.OnCross;
+            @Cross.performed -= instance.OnCross;
+            @Cross.canceled -= instance.OnCross;
+            @Square.started -= instance.OnSquare;
+            @Square.performed -= instance.OnSquare;
+            @Square.canceled -= instance.OnSquare;
+            @Triangle.started -= instance.OnTriangle;
+            @Triangle.performed -= instance.OnTriangle;
+            @Triangle.canceled -= instance.OnTriangle;
+            @Up.started -= instance.OnUp;
+            @Up.performed -= instance.OnUp;
+            @Up.canceled -= instance.OnUp;
+            @Down.started -= instance.OnDown;
+            @Down.performed -= instance.OnDown;
+            @Down.canceled -= instance.OnDown;
+            @Right.started -= instance.OnRight;
+            @Right.performed -= instance.OnRight;
+            @Right.canceled -= instance.OnRight;
+            @Left.started -= instance.OnLeft;
+            @Left.performed -= instance.OnLeft;
+            @Left.canceled -= instance.OnLeft;
+            @R1.started -= instance.OnR1;
+            @R1.performed -= instance.OnR1;
+            @R1.canceled -= instance.OnR1;
+            @R2.started -= instance.OnR2;
+            @R2.performed -= instance.OnR2;
+            @R2.canceled -= instance.OnR2;
+            @R3.started -= instance.OnR3;
+            @R3.performed -= instance.OnR3;
+            @R3.canceled -= instance.OnR3;
+            @L1.started -= instance.OnL1;
+            @L1.performed -= instance.OnL1;
+            @L1.canceled -= instance.OnL1;
+            @L2.started -= instance.OnL2;
+            @L2.performed -= instance.OnL2;
+            @L2.canceled -= instance.OnL2;
+            @L3.started -= instance.OnL3;
+            @L3.performed -= instance.OnL3;
+            @L3.canceled -= instance.OnL3;
+            @Options.started -= instance.OnOptions;
+            @Options.performed -= instance.OnOptions;
+            @Options.canceled -= instance.OnOptions;
+            @Share.started -= instance.OnShare;
+            @Share.performed -= instance.OnShare;
+            @Share.canceled -= instance.OnShare;
+            @RightStick.started -= instance.OnRightStick;
+            @RightStick.performed -= instance.OnRightStick;
+            @RightStick.canceled -= instance.OnRightStick;
+            @LeftStick.started -= instance.OnLeftStick;
+            @LeftStick.performed -= instance.OnLeftStick;
+            @LeftStick.canceled -= instance.OnLeftStick;
+        }
+
+        public void RemoveCallbacks(IButtonTestActions instance)
+        {
+            if (m_Wrapper.m_ButtonTestActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IButtonTestActions instance)
+        {
+            foreach (var item in m_Wrapper.m_ButtonTestActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_ButtonTestActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public ButtonTestActions @ButtonTest => new ButtonTestActions(this);
     private int m_KeyboardMouseSchemeIndex = -1;
     public InputControlScheme KeyboardMouseScheme
     {
@@ -1186,9 +2458,15 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
-        void OnMechanism(InputAction.CallbackContext context);
-        void OnReset(InputAction.CallbackContext context);
-        void OnSpace(InputAction.CallbackContext context);
+        void OnMec1_plus(InputAction.CallbackContext context);
+        void OnMec1_minus(InputAction.CallbackContext context);
+        void OnMec2_plus(InputAction.CallbackContext context);
+        void OnMec2_minus(InputAction.CallbackContext context);
+        void OnMec3_plus(InputAction.CallbackContext context);
+        void OnMec3_minus(InputAction.CallbackContext context);
+        void OnMec2_double(InputAction.CallbackContext context);
+        void OnMec3_double(InputAction.CallbackContext context);
+        void OnMec1_double(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
@@ -1202,5 +2480,26 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
         void OnRightClick(InputAction.CallbackContext context);
         void OnTrackedDevicePosition(InputAction.CallbackContext context);
         void OnTrackedDeviceOrientation(InputAction.CallbackContext context);
+    }
+    public interface IButtonTestActions
+    {
+        void OnCircle(InputAction.CallbackContext context);
+        void OnCross(InputAction.CallbackContext context);
+        void OnSquare(InputAction.CallbackContext context);
+        void OnTriangle(InputAction.CallbackContext context);
+        void OnUp(InputAction.CallbackContext context);
+        void OnDown(InputAction.CallbackContext context);
+        void OnRight(InputAction.CallbackContext context);
+        void OnLeft(InputAction.CallbackContext context);
+        void OnR1(InputAction.CallbackContext context);
+        void OnR2(InputAction.CallbackContext context);
+        void OnR3(InputAction.CallbackContext context);
+        void OnL1(InputAction.CallbackContext context);
+        void OnL2(InputAction.CallbackContext context);
+        void OnL3(InputAction.CallbackContext context);
+        void OnOptions(InputAction.CallbackContext context);
+        void OnShare(InputAction.CallbackContext context);
+        void OnRightStick(InputAction.CallbackContext context);
+        void OnLeftStick(InputAction.CallbackContext context);
     }
 }
