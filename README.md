@@ -1,1 +1,2 @@
-# TEMPLATE
+# Contoroller_UI
+Unityでコントローラーの出力結果をUDP通信で送信するプログラムです。
