@@ -117,6 +117,23 @@ public class UdpSend : MonoBehaviour
 
     public void SetText()
     {
+        if(IP_1_InputField.text == "" || int.Parse(IP_1_InputField.text) >= 255 || int.Parse(IP_1_InputField.text) == 0)
+        {
+            IP_1_InputField.text = IP1.ToString();
+        }
+        if(IP_2_InputField.text == "" || int.Parse(IP_2_InputField.text) >= 255 || int.Parse(IP_2_InputField.text) == 0)
+        {
+            IP_2_InputField.text = IP2.ToString();
+        }
+        if(IP_3_InputField.text == "" || int.Parse(IP_3_InputField.text) >= 255 || int.Parse(IP_3_InputField.text) == 0)
+        {
+            IP_3_InputField.text = IP3.ToString();
+        }
+        if(IP_4_InputField.text == "" || int.Parse(IP_4_InputField.text) >= 255 || int.Parse(IP_4_InputField.text) == 0)
+        {
+            IP_4_InputField.text = IP4.ToString();
+        }
+
         IP1 = int.Parse(IP_1_InputField.text);
         IP2 = int.Parse(IP_2_InputField.text);
         IP3 = int.Parse(IP_3_InputField.text);
