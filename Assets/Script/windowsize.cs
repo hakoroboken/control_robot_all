@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.InputSystem;
 
 /// <summary>
 /// PC版でウィンドウサイズを自動で調整するクラス
