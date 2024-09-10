@@ -37,6 +37,7 @@ public class StopButton : MonoBehaviour
             GameObject red = (GameObject)Resources.Load("redcircle");
             GameObject redinstance = (GameObject)Instantiate(red, redpos.position, Quaternion.identity, _circlered.transform);
             _StopText.text = "Stoped";
+            _StopText.color = new Color(1.0f, 0.0f, 0.0f, 1.0f);
             stop = true;
         }
     }

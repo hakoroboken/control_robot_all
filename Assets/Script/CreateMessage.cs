@@ -1,8 +1,10 @@
 using System;
 using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.LowLevel;
+using UnityEngine.UI;
 
 public class CreateMessage : MonoBehaviour
 {
@@ -10,6 +12,15 @@ public class CreateMessage : MonoBehaviour
 
     [SerializeField] private Vector2 _LeftInputValue;
     [SerializeField] private Vector2 _RightInputValue;
+    public GameObject _lslider;
+    public GameObject _rslider;
+    private Slider LSlider;
+    private Slider RSlider;
+    public float Lsensitivity = 1;
+    public float Rsensitivity = 1;
+    private float lx;
+    private float ly;
+    private float rx;
 
     public string log;
 
@@ -60,6 +71,9 @@ public class CreateMessage : MonoBehaviour
         _mec_1 = 0;
         _mec_2 = 0;
         _mec_3 = 0;
+
+        LSlider = _lslider.GetComponent<Slider>();
+        RSlider = _rslider.GetComponent<Slider>();
     }
 
     private void OnDestroy()
@@ -126,15 +140,48 @@ public class CreateMessage : MonoBehaviour
         _mec_3 = 0;
     }
 
-    private void AllZero(InputAction.CallbackContext context)
+    public void changeslider()
     {
-        _mec_1 = 0;
-        _mec_2 = 0;
-        _mec_3 = 0;
+        Lsensitivity = LSlider.value;
+        Rsensitivity = RSlider.value;
     }
 
     private void Update()
     {
-        log = "s," + ((_LeftInputValue.x + 1) / 2).ToString("F3") + "," + ((_LeftInputValue.y + 1) / 2).ToString("F3") + "," + ((_RightInputValue.x + 1) / 2).ToString("F3") + "," + _mec_1 + "," + _mec_2 + "," + _mec_3 + ",e";
+        if (EventSystem.current.currentSelectedGameObject == LSlider.gameObject || EventSystem.current.currentSelectedGameObject == RSlider.gameObject)
+        {
+            EventSystem.current.SetSelectedGameObject(null);
+        }
+
+        lx = Lsensitivity * _LeftInputValue.x;
+        ly = Lsensitivity * _LeftInputValue.y;
+        rx = Rsensitivity * _RightInputValue.x;
+
+        if(lx > 1)
+        {
+            lx = 1;
+        }
+        else if( lx < -1)
+        { 
+            lx = -1;
+        }
+        if (ly > 1)
+        {
+            ly = 1;
+        }
+        else if (ly < -1)
+        {
+            ly = -1;
+        }
+        if (rx > 1)
+        {
+            rx = 1;
+        }
+        else if (rx < -1)
+        {
+            rx = -1;
+        }
+
+        log = "s," + ((lx + 1) / 2).ToString("F3") + "," + ((ly + 1) / 2).ToString("F3") + "," + ((rx + 1) / 2).ToString("F3") + "," + _mec_1 + "," + _mec_2 + "," + _mec_3 + ",e";
     }
 }
