@@ -30,7 +30,8 @@ public class OKButton : MonoBehaviour
         {
             GameObject green = (GameObject)Resources.Load("greencircle");
             GameObject greeninstance = (GameObject)Instantiate(green, greenpos.position, Quaternion.identity, _circlegreen.transform);
-            _StopText.text = "";
+            _StopText.text = "Sending";
+            _StopText.color = new Color(0.0f, 0.796f, 0.0f, 1.0f);
             _StopButton.stop = false;
         }
     }
