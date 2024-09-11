@@ -26,6 +26,8 @@ public class UdpSend : MonoBehaviour
     public CreateMessage _CreateMessage;
     public StopButton _StopButton;
 
+    public bool _can = true;
+
     void Start()
     {
         IP1 = 192;
@@ -105,9 +107,13 @@ public class UdpSend : MonoBehaviour
         {
             _CreateMessage.log = "s,0.500,0.500,0.500,0,0,0,e";
         }
-        var message = Encoding.UTF8.GetBytes(_CreateMessage.log);
-        Debug.Log(_CreateMessage.log);
-        client.Send(message, message.Length);
+
+        if(_can ==  false)
+        {
+            var message = Encoding.UTF8.GetBytes(_CreateMessage.log);
+            Debug.Log(_CreateMessage.log);
+            client.Send(message, message.Length);
+        }
     }
 
     private void OnDestroy()

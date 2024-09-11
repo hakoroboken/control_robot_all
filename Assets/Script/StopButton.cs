@@ -22,7 +22,6 @@ public class StopButton : MonoBehaviour
         stop = true;
         _StopText.text = "Stoped";
         _backimage = BackImage.GetComponent<Image>();
-        _backimage.sprite = _back[0];
     }
 
     // Update is called once per frame

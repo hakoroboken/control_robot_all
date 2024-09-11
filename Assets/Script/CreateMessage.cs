@@ -1,5 +1,6 @@
 using System;
 using System.Security.Cryptography.X509Certificates;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -14,6 +15,8 @@ public class CreateMessage : MonoBehaviour
     [SerializeField] private Vector2 _RightInputValue;
     public GameObject _lslider;
     public GameObject _rslider;
+    public TextMeshProUGUI _ltext;
+    public TextMeshProUGUI _rtext;
     private Slider LSlider;
     private Slider RSlider;
     public float Lsensitivity = 1;
@@ -144,6 +147,22 @@ public class CreateMessage : MonoBehaviour
     {
         Lsensitivity = LSlider.value;
         Rsensitivity = RSlider.value;
+
+        if (Lsensitivity != 1) { 
+            _ltext.color = new Color(1.0f, 1.0f, 0.0f, 1.0f);
+        }
+        else
+        {
+            _ltext.color = new Color(0.0f, 0.0f, 0.0f, 1.0f);
+        }
+        if (Rsensitivity != 1)
+        {
+            _rtext.color = new Color(1.0f, 1.0f, 0.0f, 1.0f);
+        }
+        else
+        {
+            _rtext.color = new Color(0.0f, 0.0f, 0.0f, 1.0f);
+        }
     }
 
     private void Update()

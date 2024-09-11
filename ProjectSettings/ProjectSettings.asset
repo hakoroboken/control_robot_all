@@ -16,10 +16,10 @@ PlayerSettings:
   productName: Controller
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0.09019608, g: 0.5803922, b: 0.6156863, a: 1}
+  m_SplashScreenBackgroundColor: {r: 0.5896226, g: 0.97201973, b: 1, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
-  m_SplashScreenOverlayOpacity: 1
+  m_SplashScreenOverlayOpacity: 0.5
   m_SplashScreenAnimation: 0
   m_SplashScreenLogoStyle: 1
   m_SplashScreenDrawMode: 1
@@ -40,9 +40,9 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos:
+  - logo: {fileID: 21300000, guid: 41dcfb5f6c55e9d4fa8668715cb783e1, type: 3}
+    duration: 4
   - logo: {fileID: 10404, guid: 0000000000000000f000000000000000, type: 0}
-    duration: 3
-  - logo: {fileID: 21300000, guid: 3660ab9f5787b974ebd9890654931974, type: 3}
     duration: 3
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
@@ -550,7 +550,7 @@ PlayerSettings:
   monoEnv: 
   splashScreenBackgroundSourceLandscape: {fileID: 0}
   splashScreenBackgroundSourcePortrait: {fileID: 0}
-  blurSplashScreenBackground: 1
+  blurSplashScreenBackground: 0
   spritePackerPolicy: 
   webGLMemorySize: 32
   webGLExceptionSupport: 1
