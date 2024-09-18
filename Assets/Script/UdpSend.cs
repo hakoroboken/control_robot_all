@@ -116,7 +116,7 @@ public class UdpSend : MonoBehaviour
         SendingMessage.text = _CreateMessage.log;
         if (_StopButton.stop == true)
         {
-            _CreateMessage.log = "0.500,0.500,0.500,0,0,0,0,0";
+            _CreateMessage.log = "0.000,0.000,0.000,0,0,0,0,0";
         }
 
         if(_can ==  false)
