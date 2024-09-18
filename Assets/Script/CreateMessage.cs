@@ -31,6 +31,9 @@ public class CreateMessage : MonoBehaviour
     public float _mec_2;
     public float _mec_3;
 
+    public int Rint;
+    public int Lint;
+
     private void Awake()
     {
         // Actionスクリプトのインスタンス生成
@@ -45,24 +48,19 @@ public class CreateMessage : MonoBehaviour
         _gameInputs.Player.Look.performed += OnLock;
         _gameInputs.Player.Look.canceled += OnLock;
 
-        _gameInputs.Player.Mec1_plus.performed += OnMec1plus;
-        _gameInputs.Player.Mec1_minus.performed += OnMec1minus;
-        _gameInputs.Player.Mec1_plus.canceled += OnMec1End;
-        _gameInputs.Player.Mec1_minus.canceled += OnMec1End;
+        _gameInputs.Player.Mec1.performed += OnMec1;
+        _gameInputs.Player.Mec1.canceled += EndMec1;
 
-        _gameInputs.Player.Mec2_plus.performed += OnMec2plus;
-        _gameInputs.Player.Mec2_minus.performed += OnMec2minus;
-        _gameInputs.Player.Mec2_plus.canceled += OnMec2End;
-        _gameInputs.Player.Mec2_minus.canceled += OnMec2End;
+        _gameInputs.Player.Mec2.performed += OnMec2;
+        _gameInputs.Player.Mec2.canceled += EndMec2;
 
-        _gameInputs.Player.Mec3_plus.performed += OnMec3plus;
-        _gameInputs.Player.Mec3_minus.performed += OnMec3minus;
-        _gameInputs.Player.Mec3_plus.canceled += OnMec3End;
-        _gameInputs.Player.Mec3_minus.canceled += OnMec3End;
+        _gameInputs.Player.Mec3.performed += OnMec3;
+        _gameInputs.Player.Mec3.canceled += EndMec3;
 
-        _gameInputs.Player.Mec1_double.performed += OnMec1End;
-        _gameInputs.Player.Mec2_double.performed += OnMec2End;
-        _gameInputs.Player.Mec3_double.performed += OnMec3End;
+        _gameInputs.Player.R1.performed += OnR1;
+        _gameInputs.Player.R1.canceled += EndR1;
+        _gameInputs.Player.L1.performed += OnL1;
+        _gameInputs.Player.L1.canceled += EndL1;
 
         // Input Actionを機能させるためには、
         // 有効化する必要がある
@@ -74,6 +72,8 @@ public class CreateMessage : MonoBehaviour
         _mec_1 = 0;
         _mec_2 = 0;
         _mec_3 = 0;
+        Rint = 0;
+        Lint = 0;
 
         LSlider = _lslider.GetComponent<Slider>();
         RSlider = _rslider.GetComponent<Slider>();
@@ -99,48 +99,54 @@ public class CreateMessage : MonoBehaviour
         _RightInputValue.y *= -1;
     }
 
-    private void OnMec1plus(InputAction.CallbackContext context)
+    private void OnMec1(InputAction.CallbackContext context)
     {
         _mec_1 = 1;
     }
 
-    private void OnMec1minus(InputAction.CallbackContext context)
-    {
-        _mec_1 = -1;
-    }
-
-    private void OnMec1End(InputAction.CallbackContext context)
+    private void EndMec1(InputAction.CallbackContext context)
     {
         _mec_1 = 0;
     }
 
-    private void OnMec2plus(InputAction.CallbackContext context)
+    private void OnMec2(InputAction.CallbackContext context)
     {
         _mec_2 = 1;
     }
-    private void OnMec2minus(InputAction.CallbackContext context)
-    {
-        _mec_2 = -1;
-    }
 
-    private void OnMec2End(InputAction.CallbackContext context)
+    private void EndMec2(InputAction.CallbackContext context)
     {
         _mec_2 = 0;
     }
 
-    private void OnMec3plus(InputAction.CallbackContext context)
+    private void OnMec3(InputAction.CallbackContext context)
     {
         _mec_3 = 1;
     }
 
-    private void OnMec3minus(InputAction.CallbackContext context)
-    {
-        _mec_3 = -1;
-    }
-
-    private void OnMec3End(InputAction.CallbackContext context)
+    private void EndMec3(InputAction.CallbackContext context)
     {
         _mec_3 = 0;
+    }
+
+    private void OnR1(InputAction.CallbackContext context)
+    {
+        Rint = 1;
+    }
+
+    private void EndR1(InputAction.CallbackContext context)
+    {
+        Rint = 0;
+    }
+
+    private void OnL1(InputAction.CallbackContext context)
+    {
+        Lint = 1;
+    }
+
+    private void EndL1(InputAction.CallbackContext context)
+    {
+        Lint = 0;
     }
 
     public void changeslider()
@@ -201,6 +207,6 @@ public class CreateMessage : MonoBehaviour
             rx = -1;
         }
 
-        log = "s," + ((lx + 1) / 2).ToString("F3") + "," + ((ly + 1) / 2).ToString("F3") + "," + ((rx + 1) / 2).ToString("F3") + "," + _mec_1 + "," + _mec_2 + "," + _mec_3 + ",e";
+        log = lx.ToString("F3") + "," + ly.ToString("F3") + "," + rx.ToString("F3") + "," + _mec_1 + "," + _mec_2 + "," + _mec_3 + "," + Rint + "," + Lint;
     }
 }
