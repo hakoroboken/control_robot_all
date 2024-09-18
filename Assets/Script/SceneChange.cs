@@ -12,15 +12,15 @@ public class SceneChange : MonoBehaviour
     public GameObject _1;
     public GameObject _2;
     public GameObject _3;
-    public GameObject _4;
-    public GameObject _5;
-    public GameObject _6;
     public GameObject _mask;
     public GameObject _back;
-    public GameObject _mainsource;
+    public GameObject _anykey;
     private Image backImg;
     public Sprite[] _backImg;
-    public UdpSend _UdpSend;
+    public GameObject _Join;
+    public Join _join;
+
+    public bool iscan = true;
 
     private void Awake()
     {
@@ -41,25 +41,25 @@ public class SceneChange : MonoBehaviour
 
     private void OnNext(InputAction.CallbackContext context)
     {
-        if (_UdpSend._can == true)
+        if (iscan == true)
         {
-            Invoke("Change", 1.5f);
+            Invoke("Change", 1.7f);
 
             var sequence = DOTween.Sequence();
 
-            sequence.Append(_1.transform.DOMoveX(90f, 2.5f));
-            sequence.Join(_2.transform.DOMoveX(90f, 2.5f).SetDelay(0.5f));
-            sequence.Join(_3.transform.DOMoveX(90f, 2.5f).SetDelay(0.5f));
-            sequence.Join(_4.transform.DOMoveX(90f, 2.5f).SetDelay(0.5f));
-            sequence.Join(_5.transform.DOMoveX(90f, 2.5f).SetDelay(0.5f));
-            sequence.Join(_6.transform.DOMoveX(90f, 2.5f).SetDelay(0.5f));
-            sequence.Join(_mask.transform.DOMoveX(90f, 2.5f).SetDelay(0.5f));
+            sequence.Append(_1.transform.DOLocalMoveX(170f, 2.5f));
+            sequence.Join(_2.transform.DOLocalMoveX(170f, 2.5f).SetDelay(0.5f));
+            sequence.Join(_3.transform.DOLocalMoveX(170f, 2.5f).SetDelay(0.5f));
+            sequence.Join(_mask.transform.DOLocalMoveX(160f, 2.5f).SetDelay(0.5f));
 
             sequence.Play().OnComplete(() =>
             {
                 this.gameObject.SetActive(false);
+                _Join.SetActive(true);
+                _join._canjoin = true;
             });
-            _UdpSend._can = false;
+
+            iscan = false;
         }
     }
 
@@ -80,6 +80,6 @@ public class SceneChange : MonoBehaviour
     {
         backImg.sprite = _backImg[1];
         _back.transform.SetSiblingIndex(0);
-        _mainsource.SetActive(true);
+        _anykey.gameObject.SetActive(false);
     }
 }
