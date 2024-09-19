@@ -27,7 +27,7 @@ public class OKButton : MonoBehaviour
 
     public void Onclick()
     {
-        if(_StopButton.stop == true && _UdpSend._can == false)
+        if(_StopButton.stop == true && _UdpSend._canleave == false)
         {
             GameObject green = (GameObject)Resources.Load("greencircle");
             GameObject greeninstance = (GameObject)Instantiate(green, greenpos.position, Quaternion.identity, _circlegreen.transform);

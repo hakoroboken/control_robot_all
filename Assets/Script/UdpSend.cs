@@ -35,11 +35,15 @@ public class UdpSend : MonoBehaviour
     public CreateMessage _CreateMessage;
     public StopButton _StopButton;
     public ip_active _ip_active;
+    public Leave _leave;
 
-    public bool _can = true;
+    public bool _can;
+    public bool _canleave;
 
     void Start()
     {
+        _can = true;
+        _canleave = false;
         IP1 = PlayerPrefs.GetInt("IP_1", 192);
         IP2 = PlayerPrefs.GetInt("IP_2", 168);
         IP3 = PlayerPrefs.GetInt("IP_3", 10);
@@ -57,7 +61,7 @@ public class UdpSend : MonoBehaviour
         client = new UdpClient();
         client.Connect(host, port);
 
-        #if UNITY_STANDALONE_WIN || UNITY_STANDALONE_OSX
+#if UNITY_STANDALONE_WIN || UNITY_STANDALONE_OSX
         //WindowSizeAdjusterの付いたオブジェクトを生成し、DontDestroyOnLoadでシーンを跨いでも破棄されないように
         DontDestroyOnLoad(new GameObject("windowsize", typeof(windowsize)));
         #endif
@@ -119,7 +123,7 @@ public class UdpSend : MonoBehaviour
             _CreateMessage.log = "0.000,0.000,0.000,0,0,0,0,0";
         }
 
-        if(_can ==  false)
+        if(_can ==  false && _leave.leave_bool == false)
         {
             var message = Encoding.UTF8.GetBytes(_CreateMessage.log);
             Debug.Log(_CreateMessage.log);
@@ -127,9 +131,19 @@ public class UdpSend : MonoBehaviour
         }
     }
 
-    private void OnDestroy()
+    public void OnConnect()
     {
+        client = new UdpClient();
+        client.Connect(host, port);
+        _canleave = false;
+    }
+
+    public void OnDestroy()
+    {
+        _canleave = true;
         client.Close();
+        client.Dispose();
+        client = null;
     }
 
     public void SetText()
@@ -171,8 +185,7 @@ public class UdpSend : MonoBehaviour
         PlayerPrefs.SetInt("PORT", port);
         PlayerPrefs.Save();
 
-        client = new UdpClient();
-        client.Connect(host, port);
+        OnConnect();
     }
 
     public void PortPreSave()
@@ -193,8 +206,7 @@ public class UdpSend : MonoBehaviour
             PlayerPrefs.Save();
             PortNumber.text = port.ToString();
 
-            client = new UdpClient();
-            client.Connect(host, port);
+            OnConnect();
         }
     }
 
@@ -230,8 +242,7 @@ public class UdpSend : MonoBehaviour
             IP_4_InputField.text = IP4.ToString();
             IPNumber.text = host;
 
-            client = new UdpClient();
-            client.Connect(host, port);
+            OnConnect();
         }
     }
 }
