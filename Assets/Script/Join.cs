@@ -10,12 +10,12 @@ public class Join : MonoBehaviour
     public UdpSend _UdpSend;
     public ip_active _ip_Active;
 
-    public bool _canjoin = false; 
+    public bool _canjoin; 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        _canjoin = false;
     }
 
     // Update is called once per frame
