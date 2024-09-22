@@ -8,7 +8,6 @@ public class Join : MonoBehaviour
     public GameObject _mask;
     public GameObject _back;
     public UdpSend _UdpSend;
-    public ip_active _ip_Active;
 
     public bool _canjoin; 
 
@@ -35,7 +34,6 @@ public class Join : MonoBehaviour
                 _back.SetActive(false);
                 _mask.SetActive(false);
             });
-            _ip_Active.Onclick();
         }
     }
 }
