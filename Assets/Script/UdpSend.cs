@@ -27,6 +27,8 @@ public class UdpSend : MonoBehaviour
     public TextMeshProUGUI IPNumber;
     public TextMeshProUGUI PortNumber;
     public TextMeshProUGUI SendingMessage;
+    public TextMeshProUGUI PortLoad;
+    public TextMeshProUGUI IPLoad;
     public TMP_InputField IP_1_InputField;
     public TMP_InputField IP_2_InputField;
     public TMP_InputField IP_3_InputField;
@@ -46,6 +48,8 @@ public class UdpSend : MonoBehaviour
         IP3 = PlayerPrefs.GetInt("IP_3", 10);
         IP4 = PlayerPrefs.GetInt("IP_4", 123);
         port = PlayerPrefs.GetInt("PORT", 64222);
+        IPLoad.text = PlayerPrefs.GetInt("Pre_IP_1", 192) + "." + PlayerPrefs.GetInt("Pre_IP_2", 168) + "." + PlayerPrefs.GetInt("Pre_IP_3", 10) + "." + PlayerPrefs.GetInt("Pre_IP_4", 123);
+        PortLoad.text = PlayerPrefs.GetInt("PORT", 64222).ToString();
         host = IP1 + "." + IP2 + "." + IP3 +"." + IP4;
         IP_1_InputField.text = IP1.ToString();
         IP_2_InputField.text = IP2.ToString();
@@ -187,6 +191,7 @@ public class UdpSend : MonoBehaviour
     {
         if(_ip_active.active == true)
         {
+            PortLoad.text = port.ToString();
             PlayerPrefs.SetInt("Pre_PORT", port);
             PlayerPrefs.Save();
         }
@@ -209,6 +214,8 @@ public class UdpSend : MonoBehaviour
     {
         if (_ip_active.active == true)
         {
+            host = IP1 + "." + IP2 + "." + IP3 + "." + IP4;
+            IPLoad.text = host;
             PlayerPrefs.SetInt("Pre_IP_1", IP1);
             PlayerPrefs.SetInt("Pre_IP_2", IP2);
             PlayerPrefs.SetInt("Pre_IP_3", IP3);

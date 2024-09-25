@@ -12,6 +12,7 @@ public class ip_active : MonoBehaviour
     public TMP_InputField _IP2;
     public TMP_InputField _IP3;
     public TMP_InputField _IP4;
+    public TMP_Dropdown _Mode;
 
     public GameObject _PoetImage;
     public GameObject _IPImage;
@@ -56,6 +57,7 @@ public class ip_active : MonoBehaviour
             _IP2.interactable = false;
             _IP3.interactable = false;
             _IP4.interactable = false;
+            _Mode.interactable = false;
             active = false;
             _keyipimage.sprite = _key[1];
             _keyportimage.sprite = _key[1];
@@ -71,6 +73,7 @@ public class ip_active : MonoBehaviour
             _IP2.interactable= true;
             _IP3.interactable= true;
             _IP4.interactable= true;
+            _Mode.interactable = true;
             active = true;
             _keyipimage.sprite = _key[0];
             _keyportimage.sprite = _key[0];

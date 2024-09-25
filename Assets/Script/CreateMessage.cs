@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 public class CreateMessage : MonoBehaviour
 {
-    private GameInputs _gameInputs;
+    public GameInputs _gameInputs;
 
     [SerializeField] private Vector2 _LeftInputValue;
     [SerializeField] private Vector2 _RightInputValue;
