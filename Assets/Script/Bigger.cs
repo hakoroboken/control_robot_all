@@ -31,11 +31,11 @@ public class Bigger : MonoBehaviour
         this.transform.localScale = new Vector3(1, 1, 1) * biggercount * 0.8f;
         if(biggercount > 600)
         {
-            if(_stop == true)
+            if(_stop ==true)
             {
                 _StopButton._backimage.sprite = _StopButton._back[0];
             }
-            else if (_stop == false)
+            else if (_stop ==false)
             {
                 _StopButton._backimage.sprite = _StopButton._back[1];
             }

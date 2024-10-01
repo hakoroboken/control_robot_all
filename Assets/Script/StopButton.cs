@@ -15,7 +15,6 @@ public class StopButton : MonoBehaviour
     public Sprite[] _back;
     public Transform redpos;
     public GameObject _circlered;
-    public ip_active _ip_active;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +22,7 @@ public class StopButton : MonoBehaviour
         stop = true;
         _StopText.text = "Stoped";
         _backimage = BackImage.GetComponent<Image>();
+        _backimage.sprite = _back[0];
     }
 
     // Update is called once per frame
@@ -34,11 +34,9 @@ public class StopButton : MonoBehaviour
     {
         if(stop == false)
         {
-            _ip_active.Onclick();
             GameObject red = (GameObject)Resources.Load("redcircle");
             GameObject redinstance = (GameObject)Instantiate(red, redpos.position, Quaternion.identity, _circlered.transform);
             _StopText.text = "Stoped";
-            _StopText.color = new Color(1.0f, 0.0f, 0.0f, 1.0f);
             stop = true;
         }
     }
