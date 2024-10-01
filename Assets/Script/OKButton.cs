@@ -11,8 +11,6 @@ public class OKButton : MonoBehaviour
     public TextMeshProUGUI _StopText;
     public Transform greenpos;
     public GameObject _circlegreen;
-    public UdpSend _UdpSend;
-    public ip_active _ip_active;
 
     // Start is called before the first frame update
     void Start()
@@ -28,13 +26,11 @@ public class OKButton : MonoBehaviour
 
     public void Onclick()
     {
-        if(_StopButton.stop == true && _UdpSend._can == false)
+        if(_StopButton.stop == true)
         {
-            _ip_active.Onclick();
             GameObject green = (GameObject)Resources.Load("greencircle");
             GameObject greeninstance = (GameObject)Instantiate(green, greenpos.position, Quaternion.identity, _circlegreen.transform);
-            _StopText.text = "Sending";
-            _StopText.color = new Color(0.0f, 0.796f, 0.0f, 1.0f);
+            _StopText.text = "";
             _StopButton.stop = false;
         }
     }
