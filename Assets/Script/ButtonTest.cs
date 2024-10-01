@@ -59,48 +59,48 @@ public class ButtonTest : MonoBehaviour
         // Actionスクリプトのインスタンス生成
         _gameInputs = new GameInputs();
 
-        _gameInputs.ButtonTest.Circle.performed += OnCircleStart;
-        _gameInputs.ButtonTest.Circle.canceled += OnCircleEnd;
-        _gameInputs.ButtonTest.Cross.performed += OnCrossStart;
-        _gameInputs.ButtonTest.Cross.canceled += OnCrossEnd;
-        _gameInputs.ButtonTest.Square.performed += OnSquareStart;
-        _gameInputs.ButtonTest.Square.canceled += OnSquareEnd;
-        _gameInputs.ButtonTest.Triangle.performed += OnTriangleStart;
-        _gameInputs.ButtonTest.Triangle.canceled += OnTriangleEnd;
+        _gameInputs.Test.Circle.performed += OnCircleStart;
+        _gameInputs.Test.Circle.canceled += OnCircleEnd;
+        _gameInputs.Test.Cross.performed += OnCrossStart;
+        _gameInputs.Test.Cross.canceled += OnCrossEnd;
+        _gameInputs.Test.Square.performed += OnSquareStart;
+        _gameInputs.Test.Square.canceled += OnSquareEnd;
+        _gameInputs.Test.Triangle.performed += OnTriangleStart;
+        _gameInputs.Test.Triangle.canceled += OnTriangleEnd;
 
-        _gameInputs.ButtonTest.Up.performed += OnUpStart;
-        _gameInputs.ButtonTest.Up.canceled += OnUpEnd;
-        _gameInputs.ButtonTest.Down.performed += OnDownStart;
-        _gameInputs.ButtonTest.Down.canceled += OnDownEnd;
-        _gameInputs.ButtonTest.Right.performed += OnRightStart;
-        _gameInputs.ButtonTest.Right.canceled += OnRightEnd;
-        _gameInputs.ButtonTest.Left.performed += OnLeftStart;
-        _gameInputs.ButtonTest.Left.canceled += OnLeftEnd;
+        _gameInputs.Test.Up.performed += OnUpStart;
+        _gameInputs.Test.Up.canceled += OnUpEnd;
+        _gameInputs.Test.Down.performed += OnDownStart;
+        _gameInputs.Test.Down.canceled += OnDownEnd;
+        _gameInputs.Test.Right.performed += OnRightStart;
+        _gameInputs.Test.Right.canceled += OnRightEnd;
+        _gameInputs.Test.Left.performed += OnLeftStart;
+        _gameInputs.Test.Left.canceled += OnLeftEnd;
 
-        _gameInputs.ButtonTest.R1.performed += OnR1Start;
-        _gameInputs.ButtonTest.R1.canceled += OnR1End;
-        _gameInputs.ButtonTest.R2.performed += OnR2Start;
-        _gameInputs.ButtonTest.R2.canceled += OnR2End;
-        _gameInputs.ButtonTest.R3.performed += OnR3Start;
-        _gameInputs.ButtonTest.R3.canceled += OnR3End;
-        _gameInputs.ButtonTest.L1.performed += OnL1Start;
-        _gameInputs.ButtonTest.L1.canceled += OnL1End;
-        _gameInputs.ButtonTest.L2.performed += OnL2Start;
-        _gameInputs.ButtonTest.L2.canceled += OnL2End;
-        _gameInputs.ButtonTest.L3.performed += OnL3Start;
-        _gameInputs.ButtonTest.L3.canceled += OnL3End;
+        _gameInputs.Test.R1.performed += OnR1Start;
+        _gameInputs.Test.R1.canceled += OnR1End;
+        _gameInputs.Test.R2.performed += OnR2Start;
+        _gameInputs.Test.R2.canceled += OnR2End;
+        _gameInputs.Test.R3.performed += OnR3Start;
+        _gameInputs.Test.R3.canceled += OnR3End;
+        _gameInputs.Test.L1.performed += OnL1Start;
+        _gameInputs.Test.L1.canceled += OnL1End;
+        _gameInputs.Test.L2.performed += OnL2Start;
+        _gameInputs.Test.L2.canceled += OnL2End;
+        _gameInputs.Test.L3.performed += OnL3Start;
+        _gameInputs.Test.L3.canceled += OnL3End;
 
-        _gameInputs.ButtonTest.Options.performed += OnOptionStart;
-        _gameInputs.ButtonTest.Options.canceled += OnOptionEnd;
-        _gameInputs.ButtonTest.Share.performed += OnShareStart;
-        _gameInputs.ButtonTest.Share.canceled += OnShareEnd;
+        _gameInputs.Test.Options.performed += OnOptionStart;
+        _gameInputs.Test.Options.canceled += OnOptionEnd;
+        _gameInputs.Test.Share.performed += OnShareStart;
+        _gameInputs.Test.Share.canceled += OnShareEnd;
 
-        _gameInputs.ButtonTest.RightStick.started += OnRight;
-        _gameInputs.ButtonTest.RightStick.performed += OnRight;
-        _gameInputs.ButtonTest.RightStick.canceled += OnRight;
-        _gameInputs.ButtonTest.LeftStick.started += OnLeft;
-        _gameInputs.ButtonTest.LeftStick.performed += OnLeft;
-        _gameInputs.ButtonTest.LeftStick.canceled += OnLeft;
+        _gameInputs.Test.RightStick.started += OnRight;
+        _gameInputs.Test.RightStick.performed += OnRight;
+        _gameInputs.Test.RightStick.canceled += OnRight;
+        _gameInputs.Test.LeftStick.started += OnLeft;
+        _gameInputs.Test.LeftStick.performed += OnLeft;
+        _gameInputs.Test.LeftStick.canceled += OnLeft;
 
         // Input Actionを機能させるためには、
         // 有効化する必要がある
