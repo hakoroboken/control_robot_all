@@ -5,10 +5,14 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.Purchasing;
+using UnityEngine.UI;
 using static System.Collections.Specialized.BitVector32;
 
 public class input_manager : MonoBehaviour
 {
+    [SerializeField] private TMP_Dropdown dropdown;
+
     [SerializeField] public CreateMessage _createMassage;
 
     private GameInputs gameinput;
@@ -32,53 +36,52 @@ public class input_manager : MonoBehaviour
         mec2minusAction = gameinput.Player.Mec2_minus;
         mec3plusAction = gameinput.Player.Mec3_plus;
         mec3minusAction = gameinput.Player.Mec3_minus;
-
-        now_config = 0;
     }
 
-    public void changekey_0()
+    public void config_chnger()
     {
-        mec1plusAction.ChangeBinding(1).WithPath("<Gamepad>/leftTrigger");
-        mec1plusAction.ChangeBinding(2).WithPath("<Gamepad>/buttonWest");
+        if (dropdown.value == 0)//１つ目のキーコンフィグ
+        {
+            mec1plusAction.ChangeBinding(1).WithPath("<Gamepad>/leftTrigger");
+            mec1plusAction.ChangeBinding(2).WithPath("<Gamepad>/buttonWest");
 
-        mec1minusAction.ChangeBinding(1).WithPath("<Gamepad>/rightTrigger");
-        mec1minusAction.ChangeBinding(2).WithPath("<Gamepad>/buttonWest");
+            mec1minusAction.ChangeBinding(1).WithPath("<Gamepad>/rightTrigger");
+            mec1minusAction.ChangeBinding(2).WithPath("<Gamepad>/buttonWest");
 
-        mec2plusAction.ChangeBinding(1).WithPath("<Gamepad>/leftTrigger");
-        mec2plusAction.ChangeBinding(2).WithPath("<Gamepad>/buttonNorth");
+            mec2plusAction.ChangeBinding(1).WithPath("<Gamepad>/leftTrigger");
+            mec2plusAction.ChangeBinding(2).WithPath("<Gamepad>/buttonNorth");
 
-        mec2minusAction.ChangeBinding(1).WithPath("<Gamepad>/rightTrigger");
-        mec2minusAction.ChangeBinding(2).WithPath("<Gamepad>/buttonNorth");
+            mec2minusAction.ChangeBinding(1).WithPath("<Gamepad>/rightTrigger");
+            mec2minusAction.ChangeBinding(2).WithPath("<Gamepad>/buttonNorth");
 
-        mec3plusAction.ChangeBinding(1).WithPath("<Gamepad>/leftTrigger");
-        mec3plusAction.ChangeBinding(2).WithPath("<Gamepad>/buttonEast");
+            mec3plusAction.ChangeBinding(1).WithPath("<Gamepad>/leftTrigger");
+            mec3plusAction.ChangeBinding(2).WithPath("<Gamepad>/buttonEast");
 
-        mec3minusAction.ChangeBinding(1).WithPath("<Gamepad>/rightTrigger");
-        mec3minusAction.ChangeBinding(2).WithPath("<Gamepad>/buttonEast");
+            mec3minusAction.ChangeBinding(1).WithPath("<Gamepad>/rightTrigger");
+            mec3minusAction.ChangeBinding(2).WithPath("<Gamepad>/buttonEast");
+        }else if(dropdown.value == 1)//2つ目のキーコンフィグ
+        {
+            mec1plusAction.ChangeBinding(1).WithPath("<Gamepad>/dpad/left");
+            mec1plusAction.ChangeBinding(2).WithPath("<Gamepad>/dpad/left");
 
-        now_config = 0;
-    }
+            mec1minusAction.ChangeBinding(1).WithPath("<Gamepad>/buttonWest");
+            mec1minusAction.ChangeBinding(2).WithPath("<Gamepad>/buttonWest");
 
-    public void changekey_1()
-    {
-        mec1plusAction.ChangeBinding(1).WithPath("<Gamepad>/dpad/left");
-        mec1plusAction.ChangeBinding(2).WithPath("<Gamepad>/dpad/left");
+            mec2plusAction.ChangeBinding(1).WithPath("<Gamepad>/dpad/up");
+            mec2plusAction.ChangeBinding(2).WithPath("<Gamepad>/dpad/up");
 
-        mec1minusAction.ChangeBinding(1).WithPath("<Gamepad>/buttonWest");
-        mec1minusAction.ChangeBinding(2).WithPath("<Gamepad>/buttonWest");
+            mec2minusAction.ChangeBinding(1).WithPath("<Gamepad>/buttonNorth");
+            mec2minusAction.ChangeBinding(2).WithPath("<Gamepad>/buttonNorth");
 
-        mec2plusAction.ChangeBinding(1).WithPath("<Gamepad>/dpad/up");
-        mec2plusAction.ChangeBinding(2).WithPath("<Gamepad>/dpad/up");
+            mec3plusAction.ChangeBinding(1).WithPath("<Gamepad>/dpad/right");
+            mec3plusAction.ChangeBinding(2).WithPath("<Gamepad>/dpad/right");
 
-        mec2minusAction.ChangeBinding(1).WithPath("<Gamepad>/buttonNorth");
-        mec2minusAction.ChangeBinding(2).WithPath("<Gamepad>/buttonNorth");
-
-        mec3plusAction.ChangeBinding(1).WithPath("<Gamepad>/dpad/right");
-        mec3plusAction.ChangeBinding(2).WithPath("<Gamepad>/dpad/right");
-
-        mec3minusAction.ChangeBinding(1).WithPath("<Gamepad>/buttonEast");
-        mec3minusAction.ChangeBinding(2).WithPath("<Gamepad>/buttonEast");
-
-        now_config = 1;
+            mec3minusAction.ChangeBinding(1).WithPath("<Gamepad>/buttonEast");
+            mec3minusAction.ChangeBinding(2).WithPath("<Gamepad>/buttonEast");
+        }
+        else
+        {
+            Debug.Log("blank chosed");
+        }
     }
 }
