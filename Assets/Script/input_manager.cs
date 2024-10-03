@@ -16,8 +16,6 @@ public class input_manager : MonoBehaviour
     private InputAction mec2Action;
     private InputAction mec3Action;
 
-    private int now_config;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -30,15 +28,13 @@ public class input_manager : MonoBehaviour
 
     public void ChangeButton()
     {
-        now_config = _Mode.value;
-
-        if(now_config == 0) 
+        if(_Mode.value == 0) 
         {
             mec1Action.ChangeBinding(0).WithPath("<Gamepad>/buttonEast");
             mec2Action.ChangeBinding(0).WithPath("<Gamepad>/buttonNorth");
             mec3Action.ChangeBinding(0).WithPath("<Gamepad>/buttonWest");
         }
-        else if(now_config == 1)
+        else if(_Mode.value == 1)
         {
             mec1Action.ChangeBinding(0).WithPath("<Gamepad>/dpad/right");
             mec2Action.ChangeBinding(0).WithPath("<Gamepad>/dpad/up");
